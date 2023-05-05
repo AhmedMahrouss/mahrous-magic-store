@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>Magic Store</h2>
+            <h3>people need phones</h3>
+        </div>
+        <div class="price">
+            <input type="text" id="title" placeholder="Number Of User">
+        </div>
+        <div class="body">
+            <input type="text" id="category" placeholder="Name Of User">
+            <button id="btnMood">Create</button>
+            <br>
+            <input type="search" id="search" placeholder="Search" onkeyup="searchPro(this.value)">
+        </div>
+        <div id="search-btn">
+            <button id="searchTitle" >Search By Number</button>
+            <button id="searchCategory" >Search By Name</button>
+        </div>
+        <div id="btn-delAll">
+            <button id="delete" onclick="DellAllPro()" style="display: none;"></button>
+        </div>
+        <div class="output">
+            <table>
+                <thead>
+                 <tr>
+                     <th>Id</th>
+                     <th>Number</th>
+                     <th>Name</th>
+                     <th>Update</th>
+                     <th>Delete</th>
+                 </tr>
+                </thead>
+     
+                <tbody id="tbody">
+
+                </tbody>
+             </table>
+          
+        </div>
+       
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
